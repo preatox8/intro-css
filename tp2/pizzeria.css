@@ -23,6 +23,10 @@ nav ul li:hover{
     background-color: #009900;   
 }
 
+nav ul li:focus{
+    background-color: #009900;   
+}
+
 nav ul li a{
     text-decoration: none;
     color: white;
