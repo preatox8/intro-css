@@ -23,7 +23,7 @@ nav ul li:hover{
     background-color: #009900;   
 }
 
-nav ul li:focus{
+nav ul li a:focus{
     background-color: #009900;   
 }
 
