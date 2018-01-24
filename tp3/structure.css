@@ -11,6 +11,7 @@ body {
 
 header {
     background-color: tomato;
+    flex: 1 1 100%;
 }
 
 .left-aside {
@@ -19,6 +20,8 @@ header {
 
 .right-aside {
     background-color: hotpink;
+    flex: 1 1 0;
+    order: 3;
 }
 
 main {
@@ -27,35 +30,21 @@ main {
 
 footer {
     background-color: lightgreen;
+    flex: 1 1 100%;
+    order: 4;
 }
 
 @media screen and (min-width: 801px) {
-
 
     .left-aside{
         flex: 1 1 0;
         order: 1;
     }
 
-    .right-aside{
-        flex: 1 1 0;
-        order: 3;
-    }
-
     main{
         flex: 1 1 0;
         order: 2;
     }
-
-    header{
-        flex: 1 1 100%;
-    }
-
-    footer{
-        flex: 1 1 100%;
-        order: 4;
-    }
-    
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -65,23 +54,9 @@ footer {
         order: 2;
     }
 
-    .right-aside{
-        flex: 1 1 0;
-        order: 3;
-    }
-
     main{
         flex: 1 1 100%;
         order: 1;
-    }
-
-    header{
-        flex: 1 1 100%;
-    }
-
-    footer{
-        flex: 1 1 100%;
-        order: 4;
     }
 }
 
@@ -96,22 +71,8 @@ footer {
             order: 2;
         }
     
-        .right-aside{
-            flex: 1 1 0;
-            order: 3;
-        }
-    
         main{
             flex: 1 1 0;
             order: 1;
-        }
-    
-        header{
-            flex: 1 1 100%;
-        }
-    
-        footer{
-            flex: 1 1 100%;
-            order: 4;
         }
 }
