@@ -1,5 +1,7 @@
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 * {
@@ -27,11 +29,8 @@ footer {
     background-color: lightgreen;
 }
 
-@media screen and (min-width: 800px) {
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-    }
+@media screen and (min-width: 801px) {
+
 
     .left-aside{
         flex: 1 1 0;
@@ -59,11 +58,7 @@ footer {
     
 }
 
-@media screen and (min-width: 600px) and (max-width: 800px) {
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-    }
+@media screen and (min-width: 601px) and (max-width: 800px) {
 
     .left-aside{
         flex: 1 1 0;
@@ -88,5 +83,35 @@ footer {
         flex: 1 1 100%;
         order: 4;
     }
+}
+
+@media screen and (max-width: 600px) {
+
+        .container{
+            flex-direction: column;
+        }
+
+        .left-aside{
+            flex: 1 1 0;
+            order: 2;
+        }
     
+        .right-aside{
+            flex: 1 1 0;
+            order: 3;
+        }
+    
+        main{
+            flex: 1 1 0;
+            order: 1;
+        }
+    
+        header{
+            flex: 1 1 100%;
+        }
+    
+        footer{
+            flex: 1 1 100%;
+            order: 4;
+        }
 }
